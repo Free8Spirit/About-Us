@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en" style="background-color: white">
+	<head>
+
+	  <!--
+	   About Me
+	   Author: Anthony Tennenbaum
+		 Class:  CIS 131-101
+	   Date:   20 August 2018
+
+	   Filename: subscribe.html
+	   -->
+		<meta charset="utf-8" />
+		<title>Subscribe</title>
+    <link rel="stylesheet" href="anthonyCSS.css"/>
+		<link rel="stylesheet" href="stylesheet.css"/>
+		<link rel="icon" href="Icon.png"/>
+
+	</head><!--end head-->
+
+  <body>
+    <div class="topNav">
+      <a href="anthony.html">About Me</a>
+      <a href="family.html">Family Pictures</a>
+      <a href="indexox.html">Home</a>
+    </div><!--end topNav-->
+
+    <div class="form">
+    <form action="#" method="post">
+			<fieldset id="contact">
+				<legend>Contact Information</legend>
+				<label for="fname">First Name</label>
+				<input type="text" name="fname" spellcheck="true" required />
+				<br />
+				<br />
+				<label for="lname">Last Name</label>
+				<input type="text" name="lname" required />
+				<br />
+				<br />
+				<label for="email">Email Address</label>
+				<input name="email" type="email" required />
+				<br />
+				<br />
+				<label for="phone">Phone Number</label>
+				<input name="phone" type="tel" required />
+				<br />
+			</fieldset><!--end fieldset contact-->
+
+			<fieldset>
+				<legend>Additional Information</legend>
+				<label for="selectlist">Select Campus</label>
+				<select name="campus">
+					<optgroup label="Campus">
+						<option value="sfg">Springfield</option>
+						<option value="rw">Richwood Valley</option>
+						<option value="lb">Lebanon</option>
+						<option value="tr">Table Rock</option>
+					</optgroup>
+				</select>
+				<br />
+				<br />
+				<label for="radios">Would you like to subscribe?</label>
+				<br />
+				<input type="radio" name="radios" value="yes" />Yes
+				<input type="radio" name="radios" value="no" />No
+				<input type="radio" name="radios" value="maybe" />Maybe
+				<br />
+				<br />
+				<label for="comments">Additional Comments</label>
+				<br />
+				<textarea name="comments">Comments</textarea>
+			</fieldset><!--end fieldset-->
+
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+		</form><!--end form-->
+    </div>
+
+    <footer style="position:absolute; bottom: 5px" id="footer">
+      &copy;2018 Anthony Tennenbaum
+    </footer><!--end of footer-->
+  </body><!--end of body-->
+</html><!--end of html-->
