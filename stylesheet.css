@@ -76,3 +76,112 @@ button {
 .hide {display: none;}
 .left {float: left;}
 .right {float: right;}
+
+/* Mering CSS Overlay, begins here */
+.topNav{
+    font-size: 25px;
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.topNav li{
+    display:inline;
+}
+
+.topNav a{
+    display:inline-block;
+    padding:10px;
+}
+
+.topNav a:hover{
+    color: red;
+}
+
+.topNav a:visited{
+    color: purple;
+}
+
+div.header{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: serif;
+}
+
+div.intro{
+    font-size: 30px;
+}
+
+div.intro > p:first-letter{
+    font-size: 60px
+}
+
+.familyPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div.from{
+    display: block;
+    text-align: center;
+}
+
+.image img:hover {
+    box-shadow: 0 0 3px 5px black;
+}
+
+hx{
+    font-size: 40px;
+}
+
+ul{
+    font-size: 30px;
+}
+
+#footer{
+    position:relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: black;
+    text-align: center;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+
+}
+
+.column > img{
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+.form {
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    background-color: grey;
+}
+
+/* Overlay error patches */
+.intro p {
+	width: auto;
+	text-align: center;
+}
+.form {
+    margin: 2%;
+}
