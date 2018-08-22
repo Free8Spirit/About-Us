@@ -7,6 +7,7 @@
 */
 
 body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #000000;
     background: azure;
     width: auto;
@@ -16,12 +17,24 @@ body {
     font-size: large;
 }
 header, footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 2%;
     color: orangered;
     text-shadow: 0px 0px 1px crimson;
     font-size: xx-large;
+    font-weight: bold;
+    font-variant: small-caps;
 }
-nav a {
+p {
+    width: 28%;
+    text-align: center;
+    margin: 2%;
+}
+form {
+    float: none;
+    clear: both;
+}
+nav a:link, nav a:visited, nav a:hover {
     text-decoration: none;
     color: black;
     text-shadow: 0px 0px 1px #f5a10a;
@@ -31,3 +44,35 @@ nav a {
     margin: 5%;
     width: auto;
 }
+nav a:hover, nav a:active {
+    background: black;
+    color: silver;
+    font-style: oblique;
+}
+fieldset {
+    background-color: aquamarine;
+    margin: 2%;
+    padding: 1.4%;
+}
+legend {
+    color: #01e4f3;
+    text-shadow: 0px 0px 2px crimson;
+    background: black;
+    box-shadow: 0px 0px 2px crimson;
+    padding: 2px 5px;
+    width: auto;
+}
+button {
+    margin: 2%;
+    position: relative;
+    right: 42%;
+}
+#Select, #SodaAlt, #Text {
+    padding: 1%;
+    box-sizing: border-box;
+    width: auto;
+    overflow: auto;
+}
+.hide {display: none;}
+.left {float: left;}
+.right {float: right;}

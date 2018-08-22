@@ -8,10 +8,15 @@
             Date: Single :P (8/22/2018)-->
         <meta charset="utf-8" />
         <link rel="stylesheet" href="stylesheet.css" />
-        <link rel="next" href="indexox.html" />
-        <link rel="next" href="indexAT.html" />
+        <link rel="index" href="indexox.html" />
+        <link rel="next" href="anthony.html" />
         <link rel="next" href="index.html" />
         <title> About Vert, David </title>
+        <script>
+            function Display1() {
+                Sec1.classList.remove('hide');
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -19,14 +24,44 @@
         </header>
         <nav>
             <a href="index.html"> Jay </a>
-            <a href="indexAT.html"> Anthony </a>
+            <a href="anthony.html"> Anthony </a>
             <a href="indexox.html"> David </a>
         </nav>
-        <p>
-            Facts about meh (aka hobbies)
-        </p>
+        <section>
+            <p class="left">
+                My name is David Lee Vert. My last name is French for one of my 2 favorite colors,can you take a guess?
+            </p>
+            <p class="left">
+                I have a ton of hobbies, many in the digital realm; however, I still have alot of other hobbies too! Such as biking, climbing, racing, shooting, archery, bowling, mechanics, and so on.
+            </p>
+            <p class="left">
+                My "best summer thing" is time; time to do anything, however I tend to keep myself busy and find time to fly by too quickly when you want it to go slow, yet it has the opposite effect when you want time to go fast.
+            </p>
+        </section> <br />
         <form>
-            <!-- Create form here -->
+            <fieldset>
+                <legend> What is your favorite soda/pop? </legend>
+                <select id="Select" name="Soda" onchange="Display1()" class="left">
+                    <option class="hide"> Choose Your Favorite Soda </option>
+                    <option value="Root Beer"> Root Beer </option>
+                    <option value="Mountain Dew"> Mountain Dew </option>
+                    <option value="Mr. Pibb"> Mr. Pibb </option>
+                    <option value="Dr. Pepper"> Dr. Pepper </option>
+                    <option value="Coca Cola"> Coca Cola </option>
+                    <option value="Fanta"> Fanta </option>
+                    <option value="Sprite"> Sprite </option>
+                </select>
+                <label for="SodaAlt" class="right">
+                    <input id="SodaAlt" type="text" placeholder="Alternate Soda Choice Here" onchange="Display1()" />
+                </label>
+            </fieldset>
+            <fieldset id="Sec1" class="hide">
+                <legend> Leave any questions below, Thank You! </legend>
+                <label for="Text">
+                    <input id="Text" type="text" placeholder="Comments or Questions?" />
+                </label>
+            </fieldset>
+            <button> Send/Submit </button>
         </form>
         <footer>
             Vert, David &#169; 2018
